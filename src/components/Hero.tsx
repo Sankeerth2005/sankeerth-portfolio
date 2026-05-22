@@ -272,7 +272,7 @@ export default function Hero({ onOpenResume }: HeroProps) {
               }}
             >
               <Image
-                src="/sankeerth.png"
+                src="/me - Copy.jpg"
                 alt="Sai Sankeerth Anchuru"
                 fill
                 className="object-cover object-top"
