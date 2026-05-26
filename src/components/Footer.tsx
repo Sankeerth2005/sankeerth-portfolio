@@ -44,7 +44,7 @@ export default function Footer({ onOpenResume }: FooterProps) {
 
   return (
     <footer className="relative border-t border-white/[0.05] no-print">
-      <div className="max-w-6xl mx-auto px-6 md:px-8 py-16">
+      <div className="w-full px-6 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">

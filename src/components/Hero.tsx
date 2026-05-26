@@ -92,7 +92,7 @@ export default function Hero({ onOpenResume }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-center pt-24 pb-16 px-6 md:px-8 max-w-6xl mx-auto"
+      className="relative min-h-screen flex flex-col justify-center pt-24 pb-16 px-6 md:px-8 w-full"
     >
       {/* Ambient glow blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">

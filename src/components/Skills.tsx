@@ -75,7 +75,7 @@ export default function Skills() {
     : CATEGORIES;
 
   return (
-    <section id="skills" className="py-28 px-6 md:px-8 max-w-6xl mx-auto">
+    <section id="skills" className="py-28 px-6 md:px-8 w-full">
       <motion.div {...fadeUp(0)} className="mb-16">
         <p className="text-xs font-bold tracking-widest text-purple-400/80 uppercase mb-3">
           Skills

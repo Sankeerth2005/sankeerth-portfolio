@@ -41,37 +41,37 @@ export default function Home() {
         <Hero onOpenResume={() => setIsResumeOpen(true)} />
 
         {/* Divider */}
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* About — editorial split layout */}
         <About />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* Experience — premium vertical timeline */}
         <Timeline />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* Projects — product showcase */}
         <Projects />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* Skills — elegant badge cloud */}
         <Skills />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* Education & Certifications */}
         <Certifications />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* GitHub Activity */}
         <GithubGrid />
 
-        <div className="section-divider max-w-6xl mx-auto" />
+        <div className="section-divider w-full" />
 
         {/* Contact — premium form + cal.com */}
         <Contact />

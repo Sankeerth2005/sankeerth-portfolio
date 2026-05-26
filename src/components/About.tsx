@@ -32,7 +32,7 @@ const STRENGTHS = [
 
 export default function About() {
   return (
-    <section id="about" className="py-28 px-6 md:px-8 max-w-6xl mx-auto">
+    <section id="about" className="py-28 px-6 md:px-8 w-full">
       {/* Section label */}
       <motion.div {...fadeUp(0)} className="mb-16">
         <p className="text-xs font-semibold tracking-widest text-emerald-500/70 uppercase mb-3">

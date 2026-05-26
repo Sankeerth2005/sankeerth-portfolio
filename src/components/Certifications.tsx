@@ -52,7 +52,7 @@ const fadeUp = (delay = 0) => ({
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-28 px-6 md:px-8 max-w-6xl mx-auto">
+    <section id="certifications" className="py-28 px-6 md:px-8 w-full">
       <motion.div {...fadeUp(0)} className="mb-16">
         <p className="text-xs font-bold tracking-widest text-orange-400/80 uppercase mb-3">
           Credentials

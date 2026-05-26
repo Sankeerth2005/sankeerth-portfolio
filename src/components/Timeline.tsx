@@ -61,7 +61,7 @@ const fadeUp = (delay = 0) => ({
 
 export default function Timeline() {
   return (
-    <section id="experience" className="py-28 px-6 md:px-8 max-w-6xl mx-auto">
+    <section id="experience" className="py-28 px-6 md:px-8 w-full">
       <motion.div {...fadeUp(0)} className="mb-16">
         <p className="text-xs font-bold tracking-widest text-emerald-400/80 uppercase mb-3">
           Experience
