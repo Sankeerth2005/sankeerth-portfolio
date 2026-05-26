@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -28,7 +29,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       setScrolled(window.scrollY > 30);
 
       // Active section detection
-      const sections = ["home", "about", "experience", "projects", "skills", "contact"];
+      const sections = ["home", "about", "experience", "projects", "skills", "certifications", "contact"];
       for (const id of [...sections].reverse()) {
         const el = document.getElementById(id);
         if (el && window.scrollY >= el.offsetTop - 120) {

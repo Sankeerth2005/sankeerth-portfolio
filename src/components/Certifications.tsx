@@ -6,36 +6,40 @@ import { ExternalLink } from "lucide-react";
 
 const CERTS = [
   {
-    title: "Oracle Cloud Infrastructure Foundations Associate",
+    title: "SALESFORCE Certified Agentforce Specialist",
+    issuer: "Salesforce",
+    color: "#3b82f6",
+    bg: "rgba(59,130,246,0.08)",
+    border: "rgba(59,130,246,0.25)",
+    emoji: "⚡",
+    link: "/Certificates/salesforce.jpg",
+  },
+  {
+    title: "Oracle Certified Foundations Associate",
     issuer: "Oracle",
     color: "#f97316",
     bg: "rgba(249,115,22,0.08)",
     border: "rgba(249,115,22,0.25)",
     emoji: "☁️",
+    link: "/Certificates/oracle.jpg",
   },
   {
-    title: "Salesforce Agentforce Specialist",
-    issuer: "Salesforce · AI-powered agent workflows and automation",
-    color: "#3b82f6",
-    bg: "rgba(59,130,246,0.08)",
-    border: "rgba(59,130,246,0.25)",
-    emoji: "⚡",
-  },
-  {
-    title: "SAP Business Data Cloud",
+    title: "SAP Certified - SAP Business Data Cloud",
     issuer: "SAP",
     color: "#10b981",
     bg: "rgba(16,185,129,0.08)",
     border: "rgba(16,185,129,0.25)",
     emoji: "📊",
+    link: "/Certificates/sap.jpg",
   },
   {
-    title: "AI Fluency: Frameworks & Foundations",
+    title: "AI Fluency : Frameworks & Foundations",
     issuer: "Anthropic",
     color: "#8b5cf6",
     bg: "rgba(139,92,246,0.08)",
     border: "rgba(139,92,246,0.25)",
     emoji: "🤖",
+    link: "/Certificates/anthropic.jpg",
   },
 ];
 
@@ -92,15 +96,18 @@ export default function Certifications() {
               <p className="text-sm font-bold text-white leading-tight">{cert.title}</p>
               <p className="text-xs text-zinc-600 leading-relaxed">{cert.issuer}</p>
             </div>
-            <motion.button
+            <motion.a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors cursor-pointer"
+              className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider transition-colors cursor-pointer w-fit"
               style={{ color: cert.color }}
             >
               <ExternalLink size={10} />
-              Verified
-            </motion.button>
+              View Certificate
+            </motion.a>
           </motion.div>
         ))}
       </div>
